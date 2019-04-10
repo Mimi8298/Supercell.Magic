@@ -50,7 +50,7 @@
             }
         }
 
-        public void Connect(string host = "176.159.83.126", int port = 9339)
+        public void Connect(string host = "127.0.0.1", int port = 9339)
         {
             if (this.m_messaging != null)
                 this.m_messaging.Destruct();
