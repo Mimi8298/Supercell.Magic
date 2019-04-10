@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaxMind.GeoIP2" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Supercell.Magic.Logic\Supercell.Magic.Logic.csproj" />
+    <ProjectReference Include="..\Supercell.Magic.Servers.Core\Supercell.Magic.Servers.Core.csproj" />
+    <ProjectReference Include="..\Supercell.Magic.Titan\Supercell.Magic.Titan.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\GeoIP-Country.mmdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

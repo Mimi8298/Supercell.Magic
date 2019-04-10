@@ -1,0 +1,69 @@
+{
+    "events": [
+        {
+            "type": 0,
+            "id": 20,
+            "version": 6,
+            "visibleTime": "20180730T080000.000Z",
+            "startTime": "20190101T080000.000Z",
+            "endTime": "20190501T080000.000Z",
+            "clashBoxEntryName": "ArmySpellBoost",
+            "eventEntryName": "ArmySpellBoost",
+            "inboxEntryId": -1,
+            "notificationTid": "",
+            "image": "",
+            "sc": "",
+            "localization": "",
+            "functions": [
+                {
+                    "name": "EnableTroop",
+                    "parameters": [
+                        "4000058"
+                    ]
+                },
+                {
+                    "name": "EnableTroop",
+                    "parameters": [
+                        "4000059"
+                    ]
+                },
+                {
+                    "name": "EnableTroop",
+                    "parameters": [
+                        "4000060"
+                    ]
+                },
+                {
+                    "name": "EnableTroop",
+                    "parameters": [
+                        "4000058"
+                    ]
+                },
+                {
+                    "name": "EnableTroop",
+                    "parameters": [
+                        "4000057"
+                    ]
+                },
+                {
+                    "name": "EnableTroop",
+                    "parameters": [
+                        "4000056"
+                    ]
+                },
+                {
+                    "name": "TroopTrainingBoost",
+                    "parameters": [
+                        "1"
+                    ]
+                },
+                {
+                    "name": "SpellBrewingBoost",
+                    "parameters": [
+                        "1"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+  "environment": "dev",
+  "servers": {
+    "settings": {
+      "contentValidationModeEnabled": false,
+      "proxy": {
+        "startMaintenanceTimeSecs": 0,
+        "sessionCapacity": 50
+      },
+      "admin": {
+        "presetLevelFiles": [
+          "/level/townhall8.json",
+          "/level/townhall9.json",
+          "/level/townhall10.json",
+          "/level/townhall11.json",
+          "/level/test/highlevel1.json",
+          "/level/test/highlevel2.json",
+          "/level/test/highlevel3.json",
+          "/level/test/highlevel4.json",
+          "/level/test/highlevel5.json",
+          "/level/test/highlevel6.json",
+          "/level/test/highlevel7.json",
+          "/level/test/highlevel8.json",
+          "/level/test/highlevel9.json",
+          "/level/test/playtest0.json",
+          "/level/test/playtest1.json",
+          "/level/test/playtest2.json",
+          "/level/test/playtest3.json",
+          "/level/test/playtest4.json",
+          "/level/test/playtest5.json"
+        ]
+      }
+    },
+    "admin": [
+      "127.0.0.1:10001"
+    ],
+    "proxy": [
+      "127.0.0.1:10002"
+    ],
+    "chat": [
+      "127.0.0.1:10003"
+    ],
+    "game": [
+      "127.0.0.1:10004"
+    ],
+    "home": [
+      "127.0.0.1:10005"
+    ],
+    "stream": [
+      "127.0.0.1:10007"
+    ],
+    "battle": [
+      "127.0.0.1:10008"
+    ],
+    "scoring": [
+      "127.0.0.1:10009"
+    ],
+    "search": [
+      "127.0.0.1:10010"
+    ]
+  },
+  "database": {
+    "higher_id_counter_size": 256,
+    "couchbase": {
+      "servers": [
+        {
+          "hosts": [
+            "127.0.0.1"
+          ],
+          "username": "Mike",
+          "password": "AZERTYUIOP"
+        }
+      ],
+      "buckets": [
+        "magic-players:0",
+        "magic-admin:0",
+        "magic-alliances:0",
+        "magic-streams:0",
+        "magic-seasons:0"
+      ]
+    },
+    "redis": {
+      "databases": [
+        {
+          "name": "magic-session",
+          "connectionString": "127.0.0.1:6379"
+        },
+        {
+          "name": "magic-admin",
+          "connectionString": "127.0.0.1:6379"
+        }
+      ]
+    }
+  }
+}
