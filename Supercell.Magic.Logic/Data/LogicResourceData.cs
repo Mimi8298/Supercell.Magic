@@ -6,8 +6,6 @@ namespace Supercell.Magic.Logic.Data
     public class LogicResourceData : LogicData
     {
         private string m_resourceIconExportName;
-        private string m_stealEffectMid;
-        private string m_stealEffectBig;
         private string m_hudInstanceName;
         private string m_capFullTID;
         private string m_bundleIconExportName;
@@ -24,6 +22,8 @@ namespace Supercell.Magic.Logic.Data
         private LogicEffectData m_collectEffect;
         private LogicEffectData m_stealEffect;
         private LogicResourceData m_warResourceReferenceData;
+        private LogicEffectData m_stealEffectMid;
+        private LogicEffectData m_stealEffectBig;
 
         public LogicResourceData(CSVRow row, LogicDataTable table) : base(row, table)
         {
@@ -38,8 +38,8 @@ namespace Supercell.Magic.Logic.Data
             this.m_collectEffect = LogicDataTables.GetEffectByName(this.GetValue("CollectEffect", 0), this);
 
             this.m_resourceIconExportName = this.GetValue("ResourceIconExportName", 0);
-            this.m_stealLimitMid = this.GetIntegerValue("StealLimitMid", 0);
-            this.m_stealEffectMid = this.GetValue("StealEffectMid", 0);
+            this.m_stealLimitMid = LogicDataTables.GetEffectByName(this.GetValue("StealLimitMid", 0), this);
+            this.m_stealEffectMid = LogicDataTables.GetEffectByName(this.GetValue("StealEffectMid", 0), this);
             this.m_stealLimitBig = this.GetIntegerValue("StealLimitBig", 0);
             this.m_stealEffectBig = this.GetValue("StealEffectBig", 0);
             this.m_premiumCurrency = this.GetBooleanValue("PremiumCurrency", 0);
