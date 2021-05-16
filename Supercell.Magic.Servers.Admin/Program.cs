@@ -1,13 +1,12 @@
-﻿namespace Supercell.Magic.Servers.Admin
-{
-    using System;
-    using Microsoft.AspNetCore;
-    using Microsoft.AspNetCore.Hosting;
-    using Supercell.Magic.Servers.Admin.Logic;
-    using Supercell.Magic.Servers.Admin.Network.Message;
-    using Supercell.Magic.Servers.Core;
-    using Supercell.Magic.Servers.Core.Settings;
+﻿using System;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
+using Supercell.Magic.Servers.Admin.Network.Message;
+using Supercell.Magic.Servers.Core;
+using Supercell.Magic.Servers.Core.Settings;
 
+namespace Supercell.Magic.Servers.Admin
+{
     public class Program
     {
         public static IWebHostBuilder CreateWebHostBuilder(string[] args)
