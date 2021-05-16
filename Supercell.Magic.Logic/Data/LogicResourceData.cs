@@ -38,10 +38,10 @@ namespace Supercell.Magic.Logic.Data
             this.m_collectEffect = LogicDataTables.GetEffectByName(this.GetValue("CollectEffect", 0), this);
 
             this.m_resourceIconExportName = this.GetValue("ResourceIconExportName", 0);
-            this.m_stealLimitMid = LogicDataTables.GetEffectByName(this.GetValue("StealLimitMid", 0), this);
+            this.m_stealLimitMid = this.GetIntegerValue("StealLimitMid", 0);
             this.m_stealEffectMid = LogicDataTables.GetEffectByName(this.GetValue("StealEffectMid", 0), this);
             this.m_stealLimitBig = this.GetIntegerValue("StealLimitBig", 0);
-            this.m_stealEffectBig = this.GetValue("StealEffectBig", 0);
+            this.m_stealEffectBig = LogicDataTables.GetEffectByName(this.GetValue("StealEffectBig", 0), this);
             this.m_premiumCurrency = this.GetBooleanValue("PremiumCurrency", 0);
             this.m_hudInstanceName = this.GetValue("HudInstanceName", 0);
             this.m_capFullTID = this.GetValue("CapFullTID", 0);
@@ -89,7 +89,7 @@ namespace Supercell.Magic.Logic.Data
             return this.m_stealLimitMid;
         }
 
-        public string GetStealEffectMid()
+        public LogicEffectData GetStealEffectMid()
         {
             return this.m_stealEffectMid;
         }
@@ -99,7 +99,7 @@ namespace Supercell.Magic.Logic.Data
             return this.m_stealLimitBig;
         }
 
-        public string GetStealEffectBig()
+        public LogicEffectData GetStealEffectBig()
         {
             return this.m_stealEffectBig;
         }
